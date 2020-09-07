@@ -1,18 +1,30 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="container">
+  <h1>Weather website</h1>
+  <div id="search" class="card px-5 py-5">
+  <input type="text" name="search" 
+  placeholder="Search the weather" class="form-control mb-3">
+  <button class="btn btn-primary">Search</button>
+  </div>
+  <div id="weather">
+    <h2>Weather info</h2>
+    <table class="table table-bordered table-striped">
+      <tr>
+        <th>Date time</th>
+        <th>Weather</th>
+        <th>Temperature</th>
+        <th>Icon</th>
+      </tr>
+    </table>
+  </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  
 }
 </script>
 
